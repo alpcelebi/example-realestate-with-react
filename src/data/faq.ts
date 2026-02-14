@@ -2,27 +2,27 @@ import type { AccordionItem } from '../components/ui/Accordion'
 
 export const faqItems: AccordionItem[] = [
   {
-    question: 'Evi satmak için hangi belgeler gerekir?',
+    question: 'What documents are required to sell a house?',
     answer:
-      'Tapu belgesi, kimlik, güncel DASK ve gerekli durumlarda vekalet gibi belgeler sürece göre hazırlanır. Görüşmede size net belge listesi paylaşırız.',
+      'Documents such as title deed, ID, current earthquake insurance (DASK), and power of attorney if necessary are prepared according to the process. We share a clear list of documents with you during the meeting.',
   },
   {
-    question: 'Kiralama süreci nasıl işler?',
+    question: 'How does the rental process work?',
     answer:
-      'Ön görüşme sonrası mülk analizi yapılır, uygun aday eşleştirilir ve sözleşme adımları tamamlanır. Tüm süreçte iletişim ve bilgilendirme düzenli şekilde sürer.',
+      'After preliminary discussion, property analysis is done, suitable candidates are matched, and contract steps are completed. Communication and information are maintained regularly throughout the process.',
   },
   {
-    question: 'Ekspertiz/değerleme nasıl yapılır?',
+    question: 'How is appraisal/valuation done?',
     answer:
-      'Bölge emsalleri, mülkün fiziksel özellikleri ve güncel talep durumu birlikte değerlendirilir. Bu analizle doğru fiyat aralığı oluşturulur.',
+      'Regional precedents, physical characteristics of the property, and current demand status are evaluated together. A correct price range is created with this analysis.',
   },
   {
-    question: 'Tapu işlemlerinde nasıl destek oluyorsunuz?',
+    question: 'How do you support title deed transactions?',
     answer:
-      'Randevu, belge ve işlem adımlarını önceden planlayarak sürecin sorunsuz ilerlemesi için rehberlik sağlıyoruz.',
+      'We provide guidance to ensure the process proceeds smoothly by planning appointments, documents, and transaction steps in advance.',
   },
   {
-    question: 'Komisyon/ücret bilgisi?',
-    answer: 'Detaylı bilgi için iletişime geçiniz.',
+    question: 'Commission/fee information?',
+    answer: 'Please contact us for detailed information.',
   },
 ]

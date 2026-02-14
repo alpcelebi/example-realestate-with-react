@@ -10,19 +10,19 @@ export default function FAQ() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Sık Sorulan Sorular"
-          title="Süreçle ilgili en çok merak edilenler"
-          description="Alım-satım ve kiralama süreçlerinde sık gelen soruları kısa ve net şekilde yanıtladık."
+          eyebrow="Frequently Asked Questions"
+          title="Most curious things about the process"
+          description="We have answered frequently asked questions about buying, selling, and rental processes briefly and clearly."
         />
         <div className="section-surface mt-10 p-4 sm:p-6 lg:p-8">
           <Accordion items={faqItems} defaultOpenIndex={0} />
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link to="/iletisim" className={buttonClasses()}>
-            İletişime Geç
+            Contact Us
           </Link>
           <Link to="/hizmetler" className={buttonClasses({ variant: 'outline' })}>
-            Hizmetleri İncele
+            View Services
           </Link>
         </div>
       </Container>

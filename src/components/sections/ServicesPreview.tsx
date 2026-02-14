@@ -28,9 +28,9 @@ export function ServicesPreview() {
     <section className="section-space bg-slate-100/80">
       <Container>
         <SectionHeader
-          eyebrow="Hizmetler Önizleme"
-          title="İhtiyaca göre şekillenen danışmanlık çözümleri"
-          description="Satıştan kiralamaya, ticari gayrimenkulden yatırım danışmanlığına kadar süreç odaklı hizmet sunuyoruz."
+          eyebrow="Services Preview"
+          title="Consultancy solutions shaped by needs"
+          description="We offer process-oriented service from sales to rental, commercial real estate to investment consultancy."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => {
@@ -45,16 +45,16 @@ export function ServicesPreview() {
                 </div>
                 <p className="text-sm leading-relaxed text-slate-600">{service.description}</p>
                 <div className="mt-4">
-                  <Badge variant="info">Detay için iletişime geçin</Badge>
+                  <Badge variant="info">Contact for details</Badge>
                 </div>
                 <a
                   href={createWhatsAppLink(createServiceMessage(service.title))}
                   target="_blank"
                   rel="noreferrer"
                   className={buttonClasses({ variant: 'whatsapp', className: 'mt-5 w-full justify-center' })}
-                  aria-label={`${service.title} hizmeti hakkında WhatsApp'tan bilgi al`}
+                  aria-label={`Get info about ${service.title} on WhatsApp`}
                 >
-                  WhatsApp'tan Bilgi Al
+                  Get Info on WhatsApp
                 </a>
               </Card>
             )
@@ -62,10 +62,10 @@ export function ServicesPreview() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link to="/hizmetler" className={buttonClasses()}>
-            Tüm Hizmetleri Gör
+            View All Services
           </Link>
           <Link to="/iletisim" className={buttonClasses({ variant: 'outline' })}>
-            İletişime Geç
+            Contact Us
           </Link>
         </div>
       </Container>

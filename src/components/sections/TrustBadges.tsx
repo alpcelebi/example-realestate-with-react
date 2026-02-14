@@ -26,9 +26,9 @@ export function TrustBadges() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Güven Unsurları"
-          title="Her aşamada güven ve şeffaflık"
-          description="Süreci sadece hızlandırmıyor, doğru bilgi ve resmi rehberlikle güvenli hale getiriyoruz."
+          eyebrow="Trust Elements"
+          title="Trust and transparency at every stage"
+          description="We not only speed up the process but also make it safe with accurate information and official guidance."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {trustPoints.map((point) => {

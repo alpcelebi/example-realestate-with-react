@@ -9,9 +9,9 @@ export function Testimonials() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Yorumlar"
-          title="Müşteri deneyimlerinden kısa notlar"
-          description="Danışmanlık süreçlerimizde öne çıkan geri bildirimler."
+          eyebrow="Testimonials"
+          title="Short notes from customer experiences"
+          description="Feedback highlighted in our consultancy processes."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item) => (

@@ -21,7 +21,7 @@ export function Footer() {
           <div>
             <h3 className="font-serif text-2xl text-white">{BUSINESS_NAME}</h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
-              Mersin'de satış, kiralama ve yatırım odaklı gayrimenkul danışmanlığı.
+              Real estate consultancy focused on sales, rental, and investment in Mersin.
             </p>
             <p className="mt-4 text-sm text-slate-300">{ADDRESS_TEXT}</p>
             <a href={PHONE_LINK} className="mt-3 inline-block text-sm font-semibold text-white">
@@ -31,7 +31,7 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-              Hızlı Menü
+              Quick Menu
             </h4>
             <ul className="mt-4 space-y-2 text-sm">
               {NAV_LINKS.map((item) => (
@@ -49,7 +49,7 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-              Çalışma Saatleri
+              Working Hours
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-slate-300">
               {WORKING_HOURS.map((item) => (
@@ -63,7 +63,7 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-              İletişim
+              Contact
             </h4>
             <div className="mt-4 flex flex-col gap-2 text-sm">
               <a
@@ -72,7 +72,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="text-slate-300 transition-colors hover:text-white"
               >
-                WhatsApp'tan Yaz
+                Write on WhatsApp
               </a>
               <a
                 href={MAPS_DIRECTIONS_LINK}
@@ -80,7 +80,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="text-slate-300 transition-colors hover:text-white"
               >
-                Yol Tarifi Al
+                Get Directions
               </a>
               {SOCIAL_LINKS.map((link) => (
                 <a
@@ -97,7 +97,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-10 border-t border-white/10 pt-6 text-xs text-slate-500">
-          © {new Date().getFullYear()} {BUSINESS_NAME}. Tüm hakları saklıdır.
+          © {new Date().getFullYear()} {BUSINESS_NAME}. All rights reserved.
         </p>
       </Container>
     </footer>

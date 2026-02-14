@@ -10,9 +10,9 @@ export function RegionsPreview() {
     <section className="section-space bg-slate-100/80">
       <Container>
         <SectionHeader
-          eyebrow="Mersin Bölgeleri"
-          title="Çalıştığımız bölgelere yakından bakın"
-          description="Piyasa bilgisi, talep analizi ve satış-kiralama desteğini bölge bazlı planlıyoruz."
+          eyebrow="Mersin Regions"
+          title="Take a closer look at the regions we work in"
+          description="We plan market knowledge, demand analysis, and sales-rental support on a regional basis."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {regions.slice(0, 8).map((region) => (
@@ -24,10 +24,10 @@ export function RegionsPreview() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link to="/bolgeler" className={buttonClasses()}>
-            Tüm Bölgeleri İncele
+            View All Regions
           </Link>
           <Link to="/iletisim" className={buttonClasses({ variant: 'secondary' })}>
-            Bölgenizde Danışalım
+            Consult on Your Region
           </Link>
         </div>
       </Container>

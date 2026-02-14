@@ -27,9 +27,9 @@ export default function Services() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Hizmetlerimiz"
-          title="Mersin'de uçtan uca gayrimenkul danışmanlığı"
-          description="Satış, kiralama, ticari mülk ve yatırım süreçlerinde güvenli ilerlemek için yanınızdayız."
+          eyebrow="Our Services"
+          title="End-to-end real estate consultancy in Mersin"
+          description="We are with you to proceed safely in sales, rental, commercial property, and investment processes."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => {
@@ -47,11 +47,11 @@ export default function Services() {
                   {service.description}
                 </p>
                 <p className="mt-4 text-sm text-slate-700">
-                  <span className="font-semibold text-slate-900">Kimler için:</span>{' '}
+                  <span className="font-semibold text-slate-900">Suitable for:</span>{' '}
                   {service.suitableFor}
                 </p>
                 <div className="mt-4">
-                  <Badge variant="info">Detay için iletişime geçin</Badge>
+                  <Badge variant="info">Contact for details</Badge>
                 </div>
                 <a
                   href={createWhatsAppLink(createServiceMessage(service.title))}
@@ -62,9 +62,9 @@ export default function Services() {
                     size: 'md',
                     className: 'mt-6 w-full justify-center',
                   })}
-                  aria-label={`${service.title} için WhatsApp'tan iletişime geç`}
+                  aria-label={`Contact via WhatsApp for ${service.title}`}
                 >
-                  WhatsApp'tan Bilgi Al
+                  Get Info on WhatsApp
                 </a>
               </Card>
             )

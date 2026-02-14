@@ -20,16 +20,16 @@ export default function Contact() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="İletişim"
-          title="Mersin'deki gayrimenkul süreciniz için bize ulaşın"
-          description="Form kullanmadan doğrudan telefon, WhatsApp veya yol tarifi ile hızlıca iletişime geçebilirsiniz."
+          eyebrow="Contact"
+          title="Contact us for your real estate process in Mersin"
+          description="You can quickly contact us via phone, WhatsApp, or directions without using a form."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
           <Card className="p-6 sm:p-8">
             <div className="grid gap-3 sm:grid-cols-2">
               <a href={PHONE_LINK} className={buttonClasses({ className: 'justify-center' })}>
                 <PhoneCall className="h-4 w-4" aria-hidden="true" />
-                Hemen Ara
+                Call Now
               </a>
               <a
                 href={createWhatsAppLink(GENERAL_WHATSAPP_MESSAGE)}
@@ -41,7 +41,7 @@ export default function Contact() {
                 })}
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                WhatsApp'tan Yaz
+                Write on WhatsApp
               </a>
               <a
                 href={MAPS_DIRECTIONS_LINK}
@@ -53,27 +53,27 @@ export default function Contact() {
                 })}
               >
                 <MapPinned className="h-4 w-4" aria-hidden="true" />
-                Yol Tarifi Al
+                Get Directions
               </a>
               <a
                 href={`mailto:${EMAIL_ADDRESS}`}
                 className={buttonClasses({ variant: 'outline', className: 'justify-center' })}
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
-                E-posta Gönder
+                Send Email
               </a>
             </div>
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-                  Adres
+                  Address
                 </h3>
                 <p className="mt-2 text-sm text-slate-700">{ADDRESS_TEXT}</p>
                 <p className="mt-2 text-sm text-slate-700">{PHONE_DISPLAY}</p>
               </div>
               <div>
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-                  Çalışma Saatleri
+                  Working Hours
                 </h3>
                 <ul className="mt-2 space-y-1 text-sm text-slate-700">
                   {WORKING_HOURS.map((item) => (
@@ -88,7 +88,7 @@ export default function Contact() {
           </Card>
           <Card className="overflow-hidden p-2">
             <iframe
-              title="Şahin Emlak konum haritası"
+              title="Example Real Estate location map"
               src={MAPS_EMBED_LINK}
               loading="lazy"
               className="h-[360px] w-full rounded-2xl border-0 md:h-full"

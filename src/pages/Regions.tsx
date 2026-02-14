@@ -12,9 +12,9 @@ export default function Regions() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Mersin Bölgeleri"
-          title="Yerel piyasa bilgisi ile doğru bölge stratejisi"
-          description="İlçe ve mahalle dinamiklerini analiz ederek alım-satım ve kiralama kararlarınızı netleştiriyoruz."
+          eyebrow="Mersin Regions"
+          title="Right regional strategy with local market knowledge"
+          description="We clarify your buying, selling, and rental decisions by analyzing district and neighborhood dynamics."
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {regions.map((region) => (
@@ -25,7 +25,7 @@ export default function Regions() {
               </div>
               <p className="text-sm leading-relaxed text-slate-600">{region.summary}</p>
               <div className="mt-4">
-                <Badge variant="neutral">Piyasa bilgisi + satış/kiralama desteği</Badge>
+                <Badge variant="neutral">Market knowledge + sales/rental support</Badge>
               </div>
               <a
                 href={createWhatsAppLink(createRegionMessage(region.name))}
@@ -35,9 +35,9 @@ export default function Regions() {
                   variant: 'secondary',
                   className: 'mt-6 w-full justify-center',
                 })}
-                aria-label={`${region.name} için danışmanlık başlat`}
+                aria-label={`Start consultancy for ${region.name}`}
               >
-                Bölgenizde Danışalım
+                Consult on Your Region
               </a>
             </Card>
           ))}

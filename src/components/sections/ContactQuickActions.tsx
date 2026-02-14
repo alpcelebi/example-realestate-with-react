@@ -16,14 +16,13 @@ export function ContactQuickActions() {
           <div className="grid items-center gap-6 lg:grid-cols-[1.2fr_1fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-300">
-                Hızlı İletişim
+                Quick Contact
               </p>
               <h2 className="mt-2 font-serif text-3xl leading-tight sm:text-4xl">
-                Süreci başlatmak için tek adım yeterli
+                One step is enough to start the process
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-200 sm:text-base">
-                Telefon, WhatsApp veya yol tarifi ile hemen ulaşın. İhtiyacınıza göre net bir yol
-                haritası oluşturalım.
+                Contact us immediately via phone, WhatsApp, or directions. Let's create a clear roadmap according to your needs.
               </p>
             </div>
             <div className="grid gap-3">
@@ -35,7 +34,7 @@ export function ContactQuickActions() {
                 })}
               >
                 <PhoneCall className="h-4 w-4" aria-hidden="true" />
-                Ara
+                Call
               </a>
               <a
                 href={createWhatsAppLink(GENERAL_WHATSAPP_MESSAGE)}
@@ -56,7 +55,7 @@ export function ContactQuickActions() {
                 })}
               >
                 <Navigation className="h-4 w-4" aria-hidden="true" />
-                Yol Tarifi
+                Directions
               </a>
             </div>
           </div>

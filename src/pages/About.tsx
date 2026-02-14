@@ -13,21 +13,21 @@ import { createWhatsAppLink } from '../lib/formatters'
 
 const values = [
   {
-    title: 'Güven',
+    title: 'Trust',
     description:
-      'Her adımı açık biçimde paylaşır, karar süreçlerini veriye dayalı ve anlaşılır ilerletiriz.',
+      'We share every step openly and proceed with data-driven and understandable decision processes.',
     icon: ShieldCheck,
   },
   {
-    title: 'Şeffaflık',
+    title: 'Transparency',
     description:
-      'Süreç boyunca belgeler, resmi adımlar ve olası senaryolar hakkında net bilgilendirme yaparız.',
+      'We provide clear information about documents, official steps, and possible scenarios throughout the process.',
     icon: Speech,
   },
   {
-    title: 'Hızlı İletişim',
+    title: 'Fast Communication',
     description:
-      'Telefon ve WhatsApp üzerinden hızlı dönüş sağlarız; süreci bekletmeden yönetiriz.',
+      'We provide quick responses via phone and WhatsApp; we manage the process without waiting.',
     icon: Clock3,
   },
 ]
@@ -37,27 +37,24 @@ export default function About() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Hakkımızda"
-          title={`${CITY_NAME} odağında güvenilir gayrimenkul danışmanlığı`}
-          description={`${BUSINESS_NAME}, alım-satım ve kiralama süreçlerinde hızlı iletişim ve şeffaf yönetim anlayışıyla hizmet verir.`}
+          eyebrow="About Us"
+          title={`Reliable real estate consultancy in ${CITY_NAME}`}
+          description={`${BUSINESS_NAME} provides services with a fast communication and transparent management approach in buying, selling, and rental processes.`}
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
           <Card className="p-7">
             <h2 className="text-xl font-semibold text-slate-900">
-              {BUSINESS_NAME} nasıl çalışır?
+              How does {BUSINESS_NAME} work?
             </h2>
             <p className="mt-4 leading-relaxed text-slate-600">
-              Mersin piyasasını ilçe ve mahalle bazında izleyerek doğru fiyat analizi yapar,
-              alıcı-kiracı eşleştirmesini hedef odaklı yönetiriz. Resmi işlemlerde sözleşme ve
-              tapu süreçlerini adım adım takip ederek güvenli kapanış hedefleriz.
+              We analyze the market in Mersin on a district and neighborhood basis to perform correct price analysis and manage buyer-tenant matching in a goal-oriented manner. We follow contract and title deed processes step by step in official transactions, aiming for a safe closing.
             </p>
             <p className="mt-4 leading-relaxed text-slate-600">
-              Hizmet yaklaşımımızın merkezinde güven, şeffaflık ve sürdürülebilir iletişim yer
-              alır. Her müşteri için ihtiyaç odaklı bir planla ilerleriz.
+              Trust, transparency, and sustainable communication are at the center of our service approach. We proceed with a needs-oriented plan for every customer.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href={PHONE_LINK} className={buttonClasses()}>
-                Hemen Ara
+                Call Now
               </a>
               <a
                 href={createWhatsAppLink(GENERAL_WHATSAPP_MESSAGE)}
@@ -65,7 +62,7 @@ export default function About() {
                 rel="noreferrer"
                 className={buttonClasses({ variant: 'whatsapp' })}
               >
-                WhatsApp'tan Yaz
+                Write on WhatsApp
               </a>
             </div>
           </Card>

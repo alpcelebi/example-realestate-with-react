@@ -18,10 +18,10 @@ export function Navbar() {
             <span className="font-serif text-2xl font-semibold text-brand-dark transition-colors group-hover:text-brand">
               {BUSINESS_NAME}
             </span>
-            <span className="text-xs font-medium text-slate-500">Mersin Gayrimenkul Danışmanlığı</span>
+            <span className="text-xs font-medium text-slate-500">Mersin Real Estate Consultancy</span>
           </Link>
 
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Ana menü">
+          <nav className="hidden items-center gap-1 md:flex" aria-label="Main menu">
             {NAV_LINKS.map((item) => (
               <NavLink
                 key={item.path}
@@ -43,7 +43,7 @@ export function Navbar() {
           <div className="hidden items-center gap-2 lg:flex">
             <a href={PHONE_LINK} className={buttonClasses({ variant: 'outline', size: 'sm' })}>
               <PhoneCall className="h-4 w-4" aria-hidden="true" />
-              Hemen Ara
+              Call Now
             </a>
             <a
               href={createWhatsAppLink(GENERAL_WHATSAPP_MESSAGE)}
@@ -60,7 +60,7 @@ export function Navbar() {
             type="button"
             onClick={() => setMobileOpen((prev) => !prev)}
             className="inline-flex rounded-xl border border-slate-300 p-2 text-slate-700 transition hover:border-slate-400 hover:bg-slate-100 md:hidden"
-            aria-label={mobileOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
           >
@@ -77,7 +77,7 @@ export function Navbar() {
         )}
       >
         <Container className="space-y-2 py-4">
-          <nav className="grid gap-1" aria-label="Mobil menü">
+          <nav className="grid gap-1" aria-label="Mobile menu">
             {NAV_LINKS.map((item) => (
               <NavLink
                 key={item.path}
@@ -101,7 +101,7 @@ export function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               <PhoneCall className="h-4 w-4" aria-hidden="true" />
-              Hemen Ara
+              Call Now
             </a>
             <a
               href={createWhatsAppLink(GENERAL_WHATSAPP_MESSAGE)}
@@ -111,7 +111,7 @@ export function Navbar() {
               onClick={() => setMobileOpen(false)}
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              WhatsApp'tan Yaz
+              Write on WhatsApp
             </a>
           </div>
         </Container>

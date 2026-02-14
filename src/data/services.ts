@@ -8,43 +8,43 @@ export interface ServiceItem {
 
 export const services: ServiceItem[] = [
   {
-    id: 'konut-satis',
-    title: 'Konut Satış',
+    id: 'residential-sales',
+    title: 'Residential Sales',
     description:
-      'Doğru fiyatlandırma, hedef kitle analizi ve etkili tanıtımla satış sürecini hızlandırır.',
-    suitableFor: 'Mersin’de konutunu doğru stratejiyle satmak isteyen mülk sahipleri',
+      'Accelerates the sales process with correct pricing, target audience analysis, and effective promotion.',
+    suitableFor: 'Property owners in Mersin who want to sell their property with the right strategy',
     icon: 'home',
   },
   {
-    id: 'konut-kiralama',
-    title: 'Konut Kiralama',
+    id: 'residential-rental',
+    title: 'Residential Rental',
     description:
-      'Kiralama sürecinde uygun kiracı eşleştirmesi ve sözleşme adımlarını güvenli şekilde yönetir.',
-    suitableFor: 'Mülkünü güvenli kiraya vermek isteyen ev sahipleri',
+      'Manages suitable tenant matching and contract steps securely during the rental process.',
+    suitableFor: 'Landlords who want to rent out their property safely',
     icon: 'key',
   },
   {
-    id: 'ticari-gayrimenkul',
-    title: 'Ticari Gayrimenkul',
+    id: 'commercial-real-estate',
+    title: 'Commercial Real Estate',
     description:
-      'Lokasyon, hedef işletme profili ve bölgesel potansiyeli birlikte değerlendirerek yönlendirme yapar.',
-    suitableFor: 'Ofis, dükkan veya ticari alan arayan yatırımcı ve işletmeler',
+      'Provides guidance by evaluating location, target business profile, and regional potential together.',
+    suitableFor: 'Investors and businesses looking for offices, shops, or commercial spaces',
     icon: 'building',
   },
   {
-    id: 'arsa-yatirim',
-    title: 'Arsa / Yatırım Danışmanlığı',
+    id: 'land-investment',
+    title: 'Land / Investment Consultancy',
     description:
-      'Bölgesel gelişim ve potansiyel kullanım senaryolarına göre yatırım bakış açısı sunar.',
-    suitableFor: 'Uzun vadeli kazanç hedefleyen bireysel ve kurumsal yatırımcılar',
+      'Offers an investment perspective based on regional development and potential usage scenarios.',
+    suitableFor: 'Individual and corporate investors targeting long-term gains',
     icon: 'land',
   },
   {
-    id: 'degerleme-analiz',
-    title: 'Değerleme / Fiyat Analizi',
+    id: 'valuation-analysis',
+    title: 'Valuation / Price Analysis',
     description:
-      'Mülkünüzü emsal veriler ve piyasa trendleriyle analiz ederek gerçekçi fiyat aralığı oluşturur.',
-    suitableFor: 'Satış veya kiralama öncesinde doğru fiyat belirlemek isteyenler',
+      'Creates a realistic price range by analyzing your property with precedent data and market trends.',
+    suitableFor: 'Those who want to determine the right price before selling or renting',
     icon: 'chart',
   },
 ]

@@ -10,16 +10,16 @@ export function FaqPreview() {
     <section className="section-space bg-slate-100/80">
       <Container>
         <SectionHeader
-          eyebrow="SSS"
-          title="Kısa cevaplarla en sık sorulanlar"
-          description="Tüm sorularınız için doğrudan telefon veya WhatsApp üzerinden hızlıca destek alabilirsiniz."
+          eyebrow="FAQ"
+          title="Frequently asked concise answers"
+          description="You can get quick support for all your questions directly via phone or WhatsApp."
         />
         <div className="section-surface mt-10 p-4 sm:p-6">
           <Accordion items={faqItems.slice(0, 4)} defaultOpenIndex={0} />
         </div>
         <div className="mt-8">
           <Link to="/sss" className={buttonClasses()}>
-            Tüm SSS'leri Gör
+            View All FAQs
           </Link>
         </div>
       </Container>

@@ -12,16 +12,16 @@ export function PortfolioPreview() {
     <section className="section-space">
       <Container>
         <SectionHeader
-          eyebrow="Örnek Portföy"
-          title="Sadece örnek amaçlı portföy kartları"
-          description="Gerçek ilan detayı içermez. Uygun seçenekler için doğrudan iletişime geçebilirsiniz."
+          eyebrow="Sample Portfolio"
+          title="Portfolio cards for sample purposes only"
+          description="Does not contain actual listing details. You can contact us directly for suitable options."
         />
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {portfolioSamples.map((item) => (
             <Card key={item.id} className="overflow-hidden">
               <img
                 src={item.image}
-                alt={`${item.district} bölgesinde ${item.type} örnek görseli`}
+                alt={`${item.district} region ${item.type} sample image`}
                 loading="lazy"
                 className="h-44 w-full object-cover"
               />
@@ -31,7 +31,7 @@ export function PortfolioPreview() {
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.summary}</p>
                 <a
                   href={createWhatsAppLink(
-                    `Merhaba, ${item.district} bölgesinde ${item.type.toLowerCase()} hakkında detay almak istiyorum.`,
+                    `Hello, I would like to get details about ${item.type.toLowerCase()} in ${item.district} region.`,
                   )}
                   target="_blank"
                   rel="noreferrer"
@@ -39,9 +39,9 @@ export function PortfolioPreview() {
                     variant: 'outline',
                     className: 'mt-5 w-full justify-center',
                   })}
-                  aria-label={`${item.district} örnek portföy için iletişim`}
+                  aria-label={`Contact for ${item.district} sample portfolio`}
                 >
-                  Detay için iletişime geçin
+                  Contact for details
                 </a>
               </div>
             </Card>
@@ -49,7 +49,7 @@ export function PortfolioPreview() {
         </div>
         <div className="mt-8">
           <Link to="/iletisim" className={buttonClasses({ variant: 'secondary' })}>
-            Uygun Seçenekler İçin Görüşelim
+            Let's Talk for Suitable Options
           </Link>
         </div>
       </Container>

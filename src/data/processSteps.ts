@@ -6,27 +6,27 @@ export interface ProcessStep {
 
 export const processSteps: ProcessStep[] = [
   {
-    id: 'on-gorusme',
-    title: 'Ön Görüşme',
+    id: 'preliminary',
+    title: 'Preliminary Meeting',
     description:
-      'İhtiyaçlarınızı, hedef sürenizi ve beklentilerinizi netleştirerek sürece sağlam başlangıç yapıyoruz.',
+      'We make a solid start to the process by clarifying your needs, target time, and expectations.',
   },
   {
-    id: 'analiz',
-    title: 'Analiz',
+    id: 'analysis',
+    title: 'Analysis',
     description:
-      'Bölgesel emsal, talep dinamikleri ve mülk özelliklerine göre doğru konumlandırma planı oluşturuyoruz.',
+      'We create a correct positioning plan according to regional precedents, demand dynamics, and property characteristics.',
   },
   {
-    id: 'eslestirme',
-    title: 'Pazarlama & Eşleştirme',
+    id: 'matching',
+    title: 'Marketing & Matching',
     description:
-      'Doğru hedef kitleye ulaşarak alıcı veya kiracı ile hızlı ve kontrollü eşleştirme sağlıyoruz.',
+      'We ensure fast and controlled matching with the buyer or tenant by reaching the right target audience.',
   },
   {
-    id: 'resmi-islemler',
-    title: 'Resmi İşlemler',
+    id: 'official-procedures',
+    title: 'Official Procedures',
     description:
-      'Sözleşme, tapu ve gerekli resmi adımlarda rehberlik ederek süreci güvenli şekilde tamamlıyoruz.',
+      'We complete the process safely by providing guidance on contracts, title deeds, and necessary official steps.',
   },
 ]

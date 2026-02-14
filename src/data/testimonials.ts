@@ -7,20 +7,20 @@ export interface TestimonialItem {
 export const testimonials: TestimonialItem[] = [
   {
     name: 'A. Y.',
-    role: 'Satış Danışmanlığı',
+    role: 'Sales Consultancy',
     comment:
-      'Süreç başından sonuna kadar net bilgilendirildik. Doğru fiyat analizi sayesinde hızlı sonuç aldık.',
+      'We were informed clearly from the beginning to the end of the process. We got quick results thanks to the correct price analysis.',
   },
   {
     name: 'M. K.',
-    role: 'Kiralama Desteği',
+    role: 'Rental Support',
     comment:
-      'Kiralama sürecinde sözleşme ve aday yönetimi çok düzenliydi. İletişim hızı bizim için çok değerliydi.',
+      'Contract and candidate management was very organized during the rental process. The speed of communication was very valuable to us.',
   },
   {
     name: 'S. D.',
-    role: 'Yatırım Danışmanlığı',
+    role: 'Investment Consultancy',
     comment:
-      'Bölge bazlı yaklaşım ve şeffaf anlatım sayesinde yatırım kararımızı çok daha güvenli verdik.',
+      'Thanks to the region-based approach and transparent explanation, we made our investment decision much more safely.',
   },
 ]

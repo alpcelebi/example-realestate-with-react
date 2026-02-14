@@ -18,15 +18,14 @@ export function Hero() {
             {BUSINESS_NAME} | Mersin
           </p>
           <h1 className="mt-6 font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-            Mersin'de Güvenli Alım-Satım & Kiralama
+            Secure Buying-Selling & Rental in Mersin
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
-            Bölge uzmanlığı, doğru fiyat analizi ve hızlı geri dönüş yaklaşımıyla satış, kiralama
-            ve yatırım süreçlerinizi güvenle yönetiyoruz.
+            We manage your sales, rental, and investment processes safely with regional expertise, correct price analysis, and quick response approach.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={PHONE_LINK} className={buttonClasses({ variant: 'secondary', size: 'lg' })}>
-              Hemen Ara
+              Call Now
             </a>
             <a
               href={createWhatsAppLink(GENERAL_WHATSAPP_MESSAGE)}
@@ -34,25 +33,25 @@ export function Hero() {
               rel="noreferrer"
               className={buttonClasses({ variant: 'whatsapp', size: 'lg' })}
             >
-              WhatsApp'tan Yaz
+              Write on WhatsApp
             </a>
             <Link to="/hizmetler" className={buttonClasses({ variant: 'outline', size: 'lg' })}>
-              Hizmetler
+              Services
             </Link>
           </div>
         </div>
         <div className="mt-12 grid gap-4 sm:grid-cols-3">
           <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
-            <p className="text-sm font-semibold text-white">Mersin Bölge Uzmanlığı</p>
-            <p className="mt-1 text-xs text-slate-200">İlçe ve mahalle bazında güncel pazar takibi</p>
+            <p className="text-sm font-semibold text-white">Mersin Regional Expertise</p>
+            <p className="mt-1 text-xs text-slate-200">Up-to-date market monitoring on district and neighborhood basis</p>
           </div>
           <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
-            <p className="text-sm font-semibold text-white">Doğru Fiyat Analizi</p>
-            <p className="mt-1 text-xs text-slate-200">Gerçekçi konumlama ile etkili pazarlama stratejisi</p>
+            <p className="text-sm font-semibold text-white">Correct Price Analysis</p>
+            <p className="mt-1 text-xs text-slate-200">Effective marketing strategy with realistic positioning</p>
           </div>
           <div className="rounded-2xl border border-white/20 bg-white/10 p-4 backdrop-blur">
-            <p className="text-sm font-semibold text-white">Hızlı Geri Dönüş</p>
-            <p className="mt-1 text-xs text-slate-200">Telefon ve WhatsApp üzerinden hızlı iletişim</p>
+            <p className="text-sm font-semibold text-white">Quick Response</p>
+            <p className="mt-1 text-xs text-slate-200">Fast communication via phone and WhatsApp</p>
           </div>
         </div>
       </Container>
