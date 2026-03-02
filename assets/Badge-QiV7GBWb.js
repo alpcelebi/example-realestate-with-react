@@ -1,0 +1,1 @@
+import{j as s,h as n}from"./index-ZfjXc47H.js";const r={default:"bg-brand/10 text-brand-dark",neutral:"bg-slate-100 text-slate-700",info:"bg-emerald-50 text-emerald-700"};function d({className:e,variant:t="default",...a}){return s.jsx("span",{className:n("inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold",r[t],e),...a})}export{d as B};

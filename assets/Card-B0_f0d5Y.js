@@ -1,0 +1,1 @@
+import{j as s,h as a}from"./index-ZfjXc47H.js";function d({className:r,...o}){return s.jsx("div",{className:a("rounded-3xl border border-slate-200 bg-white shadow-card transition-shadow hover:shadow-soft",r),...o})}export{d as C};
