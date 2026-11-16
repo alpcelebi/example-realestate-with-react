@@ -1,5 +1,5 @@
 import { Suspense, lazy, type ReactNode } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import App from './App'
 import { Container } from '../components/layout/Container'
 
@@ -22,12 +22,7 @@ const withSuspense = (element: ReactNode) => (
   <Suspense fallback={routeLoadingElement}>{element}</Suspense>
 )
 
-const routerBase =
-  import.meta.env.BASE_URL === '/'
-    ? '/'
-    : import.meta.env.BASE_URL.replace(/\/$/, '')
-
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <App />,
@@ -58,6 +53,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-], {
-  basename: routerBase,
-})
+])
